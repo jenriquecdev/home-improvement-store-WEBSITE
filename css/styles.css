@@ -1,0 +1,124 @@
+/* Definimos los colores principales */
+:root {
+    --verde-claro: #A5D24A;
+    --verde-medio: #92C038;
+    --verde-oscuro: #80AE25;
+    --verde-mas-oscuro: #6D9B13;
+    --verde-profundo: #5A8900;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--verde-claro);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: var(--verde-oscuro); /* Mantiene el fondo verde oscuro */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 35px; /* Tamaño llamativo */
+    font-weight: bold;
+    background: linear-gradient(90deg, #FFB74D, #FF9800, #E65100); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Aplica el degradado solo al texto */
+    display: inline-block; 
+}
+
+
+
+/* Estilos para el logo */
+.logo {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--verde-oscuro);
+    padding: 10px;
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+/* Estilos para la navegación */
+nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el carrusel */
+#carouselProductos {
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Contenedor de la imagen y el video alineados */
+.contenedor-multimedia {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 60%; /* Ajustar el ancho deseado */
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Ajuste para imagen y video */
+.img-empresa, .img-video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contenedor para tabla y descripción, alineados a la derecha */
+.contenedor-derecha {
+    width: 60%; /* Igual al ancho de multimedia */
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de la tabla */
+.tabla-ofertas {
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para la descripción de la empresa */
+.descripcion-empresa {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--verde-claro);
+    border-radius: 10px;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: var(--verde-oscuro);
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+}
